@@ -8,90 +8,92 @@
   <script src="script.js"></script>
 </head>
 <body style="background-color: beige;">
-    <h1 class="fw-bolder text-center bg-dark text-white p-3 mb-5">Virtual Keyboard</h1>
-  <div class="w-75 mx-auto mt-5 p-4 border bg-black shadow">
+  <h1 class="fw-bolder text-center bg-dark text-white p-3 mb-5">Virtual Keyboard</h1>
+
+  <div class="w-100 w-md-75 mx-auto mt-5 p-3 p-md-4 border bg-black shadow">
     
-    <textarea id="data" class="form-control mb-3 fw-bold" placeholder="Type Here ..." readonly style="background-color: #efe8e8;height:100px"></textarea>
+    <textarea id="data" class="form-control mb-3 fw-bold" placeholder="Type Here ..." readonly 
+      style="background-color: #efe8e8; height:100px"></textarea>
    
-    <div class="row g-2 mb-2">
-  
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('`')">`</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('!')">!</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('@')">@</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('#')">#</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('$')">$</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('%')">%</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('^')">^</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('&')">&</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('*')">*</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('(')">(</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText(')')">)</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('-')">-</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('+')">+</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('=')">=</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText(';')">;</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('')">,</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('.')">.</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('?')">?</button></div>
-      
-
+    <!-- Row 1 -->
+    <div class="row g-2 mb-2 text-center">
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('`')">`</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('!')">!</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('@')">@</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('#')">#</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('$')">$</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('%')">%</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('^')">^</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('&')">&</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('*')">*</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('(')">(</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText(')')">)</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('-')">-</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('+')">+</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('=')">=</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText(';')">;</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText(',')">,</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('.')">.</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('?')">?</button></div>
     </div>
 
-    <div class="row g-2 mb-2">
-      <div class="col-1"><button class="btn btn-outline-dark w-100 text-white" style="background-color:  #8c8c8c;" onclick="tabSpace()">Tab</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText(1)">1</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText(2)">2</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText(3)">3</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText(4)">4</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText(5)">5</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText(6)">6</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText(7)">7</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText(8)">8</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText(9)">9</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText(0)">0</button></div>
-      <div class="col-3"><button class="btn btn-outline-dark w-100 text-white" style="background-color:  #8c8c8c;" onclick="removeItem()">Backspace</button></div>
+    <!-- Row 2 -->
+    <div class="row g-2 mb-2 text-center">
+      <div class="col-3 col-md-1"><button class="btn btn-secondary w-100" onclick="tabSpace()">Tab</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText(1)">1</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText(2)">2</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText(3)">3</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText(4)">4</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText(5)">5</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText(6)">6</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText(7)">7</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText(8)">8</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText(9)">9</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText(0)">0</button></div>
+      <div class="col-6 col-md-3"><button class="btn btn-secondary w-100" onclick="removeItem()">Backspace</button></div>
     </div>
 
-    
-    <div class="row g-2 mb-2">
-      <div class="col-2"><button class="btn btn-outline-dark w-100 text-white" style="background-color:  #8c8c8c;">Caps Lock</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('Q')">Q</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('W')">W</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('E')">E</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('R')">R</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('T')">T</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('Y')">Y</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('U')">U</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('I')">I</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('O')">O</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('P')">P</button></div>
+    <!-- Row 3 -->
+    <div class="row g-2 mb-2 text-center">
+      <div class="col-4 col-md-2"><button class="btn btn-secondary w-100">Caps Lock</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('Q')">Q</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('W')">W</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('E')">E</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('R')">R</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('T')">T</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('Y')">Y</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('U')">U</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('I')">I</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('O')">O</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('P')">P</button></div>
     </div>
 
-    
-    <div class="row g-2 mb-2">
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('A')">A</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('S')">S</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('D')">D</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('F')">F</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('G')">G</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('H')">H</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('J')">J</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('K')">K</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('L')">L</button></div>
-      <div class="col-2"><button class="btn btn-outline-dark w-100 text-white" style="background-color:  #8c8c8c;" onclick="newLine()">Enter</button></div>
+    <!-- Row 4 -->
+    <div class="row g-2 mb-2 text-center">
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('A')">A</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('S')">S</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('D')">D</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('F')">F</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('G')">G</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('H')">H</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('J')">J</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('K')">K</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('L')">L</button></div>
+      <div class="col-4 col-md-2"><button class="btn btn-secondary w-100" onclick="newLine()">Enter</button></div>
     </div>
 
-    
-    <div class="row g-2 mb-2">
-      <div class="col-5"><button class="btn btn-outline-dark w-100 text-white" style="background-color:  #8c8c8c;"onclick="space()">Space</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('Z')">Z</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('X')">X</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('C')">C</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('V')">V</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('B')">B</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('N')">N</button></div>
-      <div class="col"><button class="btn btn-outline-light w-100 text-dark bg-white" onclick="displayText('M')">M</button></div>
+    <!-- Row 5 -->
+    <div class="row g-2 mb-2 text-center">
+      <div class="col-6 col-md-5"><button class="btn btn-secondary w-100" onclick="space()">Space</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('Z')">Z</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('X')">X</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('C')">C</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('V')">V</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('B')">B</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('N')">N</button></div>
+      <div class="col-2 col-md"><button class="btn btn-light w-100" onclick="displayText('M')">M</button></div>
     </div>
+
   </div>
 </body>
 </html>
